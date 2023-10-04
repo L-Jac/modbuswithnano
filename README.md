@@ -19,7 +19,7 @@ Advance Serial settings: Flow control->none
 拔出SD卡  
 断电重启后，用户名pi，密码pi
 
-#### 3. 配置系统（初次使用需连接网线）  
+#### 3. 换源更新（初次使用需连接网线）  
 ##### （1）更换下载源
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak  
 sudo vim /etc/apt/sources.list
@@ -85,3 +85,30 @@ Remote host: 板子的	IP地址
     >sudo apt update  
     >sudo apt upgrade  
     >sudo do-release-upgrade
+
+#### 6. 所需环境配置
+##### (1)创建虚拟环境
+>apt install python3.10-venv  
+>python3 -m venv nano_project  
+>source nano_project/bin/activat  (activat路径)  
+
+##### (2)requiremwent.txt的使用
+* 生成项目requirement.txt
+>pip install pipreqs  
+>对应目录下生成  
+>pipreqs ./ --encoding=utf8  
+>覆盖原requirement.txt  
+>pipreqs ./ --encoding=utf8 --force  
+
+* 使用requirement.txt
+>pip install -r requirements.txt
+
+##### (3)安装libopencv-dev
+>sudo apt-get install libopencv-dev..
+
+##### (4)安装RPi.GPIO
+>sudo apt-get install python3-dev  
+>sudo git clone https://github.com/friendlyarm/RPi.GPIO_NP  
+>cd RPi.GPIO_NP  
+>sudo python3 setup.py install  
+
