@@ -109,6 +109,14 @@ Remote host: 板子的	IP地址
 ##### (4)安装RPi.GPIO
 >sudo apt-get install python3-dev  
 >sudo git clone https://github.com/friendlyarm/RPi.GPIO_NP  
->cd RPi.GPIO_NP  
->sudo python3 setup.py install  
-
+* 生成whl文件方便使用(GPIO文件夹内已有whl文件)
+> cd RPi.GPIO_NP  
+> pip install wheel  
+> pip install build  
+> python3 -m build --wheel -n -x  
+> cd dist  
+> 保存whl文件  
+* 使用whl文件安装
+> cd GPIO 对应路径  
+> pip install RPi.GPIO-0.5.8-cp38-cp38-linux_armv7l.whl  
+ 
