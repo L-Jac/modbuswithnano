@@ -71,7 +71,7 @@ session->SSH
 Remote host: 板子的	IP地址  
 用户名pi，密码pi。
 
-* 原unbuntu源  
+* 原ubuntu源  
     >deb http://ports.ubuntu.com/ focal-backports main multiverse restricted universe  
     >deb http://ports.ubuntu.com/ focal-proposed main multiverse restricted universe  
     >deb http://ports.ubuntu.com/ focal-security main multiverse restricted universe  
@@ -81,7 +81,7 @@ Remote host: 板子的	IP地址
     >deb-src http://ports.ubuntu.com/ focal-proposed main multiverse restricted univeerse  
     >deb-src http://ports.ubuntu.com/ focal-updates main multiverse restricted univerrse
 
-* unbuntu系统升级
+* ubuntu系统升级
     >sudo apt update  
     >sudo apt upgrade  
     >sudo do-release-upgrade
@@ -92,8 +92,9 @@ Remote host: 板子的	IP地址
 >python3 -m venv nano_project  
 >source nano_project/bin/activat  (activat路径)  
 
-##### (2)requiremwent.txt的使用
+##### (2)requirement.txt的使用
 * 生成项目requirement.txt
+>opencv 建议单独 sudo apt install python3-opencv  
 >pip install pipreqs  
 >对应目录下生成  
 >pipreqs ./ --encoding=utf8  
