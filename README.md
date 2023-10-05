@@ -90,7 +90,7 @@ Remote host: 板子的	IP地址
 ##### (1)创建虚拟环境
 >apt install python3.10-venv  
 >python3 -m venv nano_project  
->source nano_project/bin/activat  (activat路径)  
+>source nano_project/bin/activate  (activate路径)  
 
 ##### (2)requirement.txt的使用
 * 生成项目requirement.txt
