@@ -87,6 +87,9 @@ Remote host: 板子的	IP地址
     >sudo do-release-upgrade
 
 #### 6. 所需环境配置
+##### 使用镜像站来升级 pip
+pip install -i https://mirrors.ustc.edu.cn/pypi/web/simple pip -U
+pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 ##### (1)创建虚拟环境
 >apt install python3.10-venv  
 >python3 -m venv nano_project  
