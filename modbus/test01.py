@@ -5,8 +5,8 @@ import serial
 import time
 
 ser = serial.Serial(
-    port='/dev/ttyS1',  # 串口号，根据实际情况修改
-    baudrate=115200,  # 波特率
+    port='/dev/ttyUSB1',  # 串口号，根据实际情况修改
+    baudrate=9600,  # 波特率
     parity=serial.PARITY_NONE,
     stopbits=serial.STOPBITS_ONE,
 )

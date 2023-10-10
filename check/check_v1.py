@@ -1,10 +1,7 @@
 import cv2
 import numpy as np
 import math
-import time
 import RPi.GPIO as GPIO
-import os
-import csv
 
 OPENCV_MAJOR_VERSION = int(cv2.__version__.split('.')[0])
 
